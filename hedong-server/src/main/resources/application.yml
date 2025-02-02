@@ -1,0 +1,66 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: ${cyz.datasource.driver-class-name}
+      url: jdbc:mysql://${cyz.datasource.host}:${cyz.datasource.port}/${cyz.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ${cyz.datasource.username}
+      password: ${cyz.datasource.password}
+  redis:
+    host: ${cyz.redis.host}
+    port: ${cyz.redis.port}
+    password: ${cyz.redis.password}
+    database: ${cyz.redis.database}
+
+mybatis:
+  #mapper配置文件
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.cyz.entity
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com:
+      cyz:
+        mapper: debug
+        service: info
+        controller: info
+
+cyz:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: itcast
+    # 设置jwt过期时间
+    admin-ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    admin-token-name: token
+    user-secret-key: itheima
+    user-ttl: 7200000
+    user-token-name: authentication
+  alioss:
+    endpoint: ${cyz.alioss.endpoint}
+    access-key-id: ${cyz.alioss.access-key-id}
+    access-key-secret: ${cyz.alioss.access-key-secret}
+    bucket-name: ${cyz.alioss.bucket-name}
+  wechat:
+    appid: ${cyz.wechat.appid}
+    secret: ${cyz.wechat.secret}
+    mchid : ${cyz.wechat.mchid}
+    mchSerialNo: ${cyz.wechat.mchSerialNo}
+    privateKeyFilePath: ${cyz.wechat.privateKeyFilePath}
+    apiV3Key: ${cyz.wechat.apiV3Key}
+    weChatPayCertFilePath: ${cyz.wechat.weChatPayCertFilePath}
+    notifyUrl: ${cyz.wechat.notifyUrl}
+    refundNotifyUrl: ${cyz.wechat.refundNotifyUrl}
+  shop:
+    address: 上海市普陀区中山北路3663号华东师范大学
+  baidu:
+    ak: your-ak

@@ -1,0 +1,119 @@
+{
+  "groups": [
+    {
+      "name": "cyz.alioss",
+      "type": "com.cyz.properties.AliOssProperties",
+      "sourceType": "com.cyz.properties.AliOssProperties"
+    },
+    {
+      "name": "cyz.jwt",
+      "type": "com.cyz.properties.JwtProperties",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.wechat",
+      "type": "com.cyz.properties.WeChatProperties",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cyz.alioss.access-key-id",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.AliOssProperties"
+    },
+    {
+      "name": "cyz.alioss.access-key-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.AliOssProperties"
+    },
+    {
+      "name": "cyz.alioss.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.AliOssProperties"
+    },
+    {
+      "name": "cyz.alioss.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.AliOssProperties"
+    },
+    {
+      "name": "cyz.jwt.admin-secret-key",
+      "type": "java.lang.String",
+      "description": "管理端员工生成jwt令牌相关配置",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.jwt.admin-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.jwt.admin-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.jwt.user-secret-key",
+      "type": "java.lang.String",
+      "description": "用户端微信用户生成jwt令牌相关配置",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.jwt.user-token-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.jwt.user-ttl",
+      "type": "java.lang.Long",
+      "sourceType": "com.cyz.properties.JwtProperties"
+    },
+    {
+      "name": "cyz.wechat.api-v3-key",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.appid",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.mch-serial-no",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.mchid",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.private-key-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.refund-notify-url",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    },
+    {
+      "name": "cyz.wechat.we-chat-pay-cert-file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.cyz.properties.WeChatProperties"
+    }
+  ],
+  "hints": []
+}
