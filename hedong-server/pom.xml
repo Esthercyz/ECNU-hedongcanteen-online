@@ -19,7 +19,7 @@
 
         <dependency>
             <groupId>com.cyz</groupId>
-            <artifactId>cyz-pojo</artifactId>
+            <artifactId>hedong-model</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

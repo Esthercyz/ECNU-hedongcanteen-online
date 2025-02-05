@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hedong-common" />
         <module name="hedong-server" />
-        <module name="hedong-pojo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,7 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hedong-common" options="-parameters" />
-      <module name="hedong-pojo" options="-parameters" />
+      <module name="hedong-model" options="-parameters" />
       <module name="hedong-server" options="-parameters" />
     </option>
   </component>

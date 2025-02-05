@@ -14,7 +14,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hedong-common</module>
-        <module>hedong-pojo</module>
+        <module>hedong-model</module>
         <module>hedong-server</module>
     </modules>
     <properties>
