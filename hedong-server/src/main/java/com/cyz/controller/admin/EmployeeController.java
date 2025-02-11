@@ -1,6 +1,7 @@
 package com.cyz.controller.admin;
 
 import com.cyz.constant.JwtClaimsConstant;
+import com.cyz.context.BaseContext;
 import com.cyz.dto.EmployeeDTO;
 import com.cyz.dto.EmployeeLoginDTO;
 import com.cyz.dto.EmployeePageQueryDTO;
@@ -73,6 +74,8 @@ public class EmployeeController {
     @PostMapping("/logout")
     @ApiOperation("员工退出")
     public Result<String> logout() {
+        // 清理 ThreadLocal 数据
+        BaseContext.removeCurrentId();
         return Result.success();
     }
 
